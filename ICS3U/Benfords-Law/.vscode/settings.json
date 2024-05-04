@@ -1,0 +1,32 @@
+{
+    "java.project.sourcePaths": [
+        ""
+    ],
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "dependencies/hamcrest-core-1.3.jar",
+            "dependencies/javafx.base.jar",
+            "dependencies/javafx.controls.jar",
+            "dependencies/javafx.fxml.jar",
+            "dependencies/javafx.graphics.jar",
+            "dependencies/javafx.media.jar",
+            "dependencies/javafx.swing.jar",
+            "dependencies/javafx.web.jar",
+            "dependencies/javafx-swt.jar",
+            "dependencies/jcommon-1.0.23.jar",
+            "dependencies/jfreechart-1.0.19.jar",
+            "dependencies/jfreechart-1.0.19-experimental.jar",
+            "dependencies/jfreechart-1.0.19-swt.jar",
+            "dependencies/jfreesvg-2.0.jar",
+            "dependencies/junit-4.11.jar",
+            "dependencies/orsoncharts-1.4-eval-nofx.jar",
+            "dependencies/orsonpdf-1.6-eval.jar",
+            "dependencies/servlet.jar",
+            "dependencies/swtgraphics2d.jar"
+        ],
+        "exclude": [
+            "c:\\Users\\vintr\\Documents\\jfreechart-1.0.19\\lib\\hamcrest-core-1.3.jar"
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.quizkit.gui.student.OptionsMenuController">
+   <right>
+      <Region prefHeight="305.0" prefWidth="99.0" style="-fx-background-color: #F0E68C;" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <Region prefHeight="305.0" prefWidth="104.0" style="-fx-background-color: #F0E68C;" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #F0E68C;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="297.0" text="Select an Option:" textFill="#ff7700">
+               <font>
+                  <Font name="Impact" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="messageError" alignment="CENTER" prefHeight="17.0" prefWidth="299.0" textFill="#dd0303">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="TOP_CENTER" prefHeight="157.0" prefWidth="297.0" spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goToResults" prefHeight="90.0" prefWidth="141.0" style="-fx-background-color: #89D864; -fx-cursor: hand;" text="View Results">
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#goToTest" prefHeight="90.0" prefWidth="142.0" style="-fx-background-color: #89D864; -fx-cursor: hand;" text="Start Test">
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#logout" prefHeight="46.0" prefWidth="305.0" style="-fx-background-color: #59CFDD; -fx-cursor: hand;" text="LOGOUT">
+               <VBox.margin>
+                  <Insets left="70.0" right="70.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="59.0" prefWidth="500.0" style="-fx-background-color: #606587;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="welcomeMessage" alignment="CENTER" prefHeight="59.0" prefWidth="500.0" style="-fx-background-color: #606587;" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
